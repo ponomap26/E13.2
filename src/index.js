@@ -1,11 +1,11 @@
-import './style.css';
+import "./style.css";
 
 // Импортируем функции из math.js
-import { multiply, sum } from './math.js';
+import { multiply, sum } from "./math.js";
 
 // Выводим сообщение на страницу
-const message = document.createElement('div');
-message.textContent = 'Hello, Constantin!';
+const message = document.createElement("div");
+message.textContent = "Hello, Word!";
 document.body.appendChild(message);
 
 // Вызываем функции из math.js и выводим результат в консоль

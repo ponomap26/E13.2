@@ -5,16 +5,18 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 
 module.exports = {
+
     mode: 'development',
     entry: './src/index.js',
+    stats:{
+        children:false
+    },
     devServer: {
-        static: {
+         static: {
             directory: '/dist'
         },
-        // stat:{
-        //     children:false
-        // },
         port: 3001,
+        // contentBase: './dist',
         hot: true,
         historyApiFallback: true,
         open: true
