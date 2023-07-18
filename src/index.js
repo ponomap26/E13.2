@@ -1,6 +1,13 @@
-document.write('Hello,Word!!!');
-document.write('Hello,Constantin!');
 import './style.css';
-import * as math from './math.js';
-console.log( math.multiply(5) );
-console.log( math.sum(1,2) );
+
+// Импортируем функции из math.js
+import { multiply, sum } from './math.js';
+
+// Выводим сообщение на страницу
+const message = document.createElement('div');
+message.textContent = 'Hello, Constantin!';
+document.body.appendChild(message);
+
+// Вызываем функции из math.js и выводим результат в консоль
+console.log(multiply(5));
+console.log(sum(1, 2));

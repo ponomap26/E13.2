@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "start:dev": "webpack serve --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,9 +21,13 @@
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "style-loader": "^3.3.3",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-webpack-plugin": "^4.1.1",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "acorn": "^8.10.0",
