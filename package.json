@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "parcel src/index.html",
-    "start:dev": "webpack serve --config webpack.config.js"
+    "start:dev": "webpack serve --config webpack.config.js",
+    "prepare": "husky install",
+    "lint": "eslint .eslintrc.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,8 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.32.2",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "hysky": "^1.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
