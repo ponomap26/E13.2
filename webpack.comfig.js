@@ -30,15 +30,12 @@ module.exports = {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
+
             {
                 test: /\.pug$/,
                 use: ['pug-loader']
             },
-            {
-                test: /\.js$/,
-                use: 'eslint-loader',
-                exclude: '/node_modules/'
-            }
+
         ]
     },
     plugins: [

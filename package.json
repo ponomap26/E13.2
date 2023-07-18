@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "parcel src/index.html",
-    "start:dev": "webpack serve --config webpack.config.js",
+    "start:dev": "webpack serve --config webpack.comfig.js",
+    "start:prod": "webpack serve --config webpack.prod.js",
     "prepare": "husky install",
     "lint": "eslint .eslintrc.js"
   },
