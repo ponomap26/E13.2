@@ -20,6 +20,13 @@ module.exports = {
             {
                 test: /\.pug$/,
                 use: ['pug-loader']
+            },
+            {
+                test: /\.js$/,
+                use: 'eslint-loader',
+                exclude: '/node_modules/',
+
+
             }
         ]
     },
